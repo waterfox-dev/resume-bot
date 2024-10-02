@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "author": "Alice",
+        "content": "Je pense que les fruits sont meilleurs. Ils sont sucrés, pleins de vitamines et rafraîchissants. Les légumes sont bien, mais parfois un peu fades.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 2,
+        "author": "Bob",
+        "content": "Je ne suis pas d'accord, Alice. Les légumes sont essentiels à une alimentation équilibrée. Ils sont riches en fibres et en nutriments. Sans eux, il manquerait une base solide à nos repas.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 3,
+        "author": "Charlie",
+        "content": "J'adore le chocolat chaud !",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 4,
+        "author": "Alice",
+        "content": "Oui, Bob, je comprends ton point de vue, mais les fruits sont plus pratiques à emporter et à consommer rapidement, surtout quand on est pressé.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 5,
+        "author": "Bob",
+        "content": "C'est vrai, mais les légumes peuvent être cuisinés de multiples façons pour qu'ils soient savoureux et variés. Les fruits ne peuvent pas remplacer un bon repas.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 6,
+        "author": "Alice",
+        "content": "Mais quand il fait chaud, rien de mieux qu'une salade de fruits ! C'est rafraîchissant et ça donne de l'énergie. Les légumes cuits peuvent être lourds à digérer en été.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 7,
+        "author": "Bob",
+        "content": "Je ne dis pas que les fruits ne sont pas bons, mais ils ne te rassasient pas comme les légumes. Après un plat de légumes, tu te sens nourri et satisfait.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 8,
+        "author": "Charlie",
+        "content": "Vous parlez de fruits et de légumes, mais avez-vous essayé d'ajouter un peu de chocolat chaud à votre journée ? C'est parfait pour le moral !",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 9,
+        "author": "Alice",
+        "content": "Haha, Charlie, je ne suis pas sûre que le chocolat chaud entre dans notre débat, mais oui, c'est un bon plaisir sucré !",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 10,
+        "author": "Bob",
+        "content": "Le chocolat chaud est agréable, mais ça ne remplacera jamais un bon plat de légumes cuisinés, comme des brocolis rôtis ou des carottes sautées. Plein de saveurs !",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 11,
+        "author": "Alice",
+        "content": "Des brocolis rôtis, oui, ça peut être bon, mais je pense qu'une orange bien juteuse ou une pomme croquante est bien plus appétissante après un effort physique.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 12,
+        "author": "Charlie",
+        "content": "Après le sport, moi je préfère un chocolat chaud. C'est réconfortant.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 13,
+        "author": "Bob",
+        "content": "Alice, je suis d'accord que les fruits après un effort, c'est bien, mais les légumes sont parfaits pour un bon dîner. Tu ne peux pas faire un dîner complet avec juste des fruits.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 14,
+        "author": "Alice",
+        "content": "Ça dépend ! Un bon bol de salade de fruits avec du yaourt, des noix et du miel, ça peut être un repas léger et délicieux.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 15,
+        "author": "Bob",
+        "content": "Peut-être, mais tu vas avoir faim dans une heure après ça. Les légumes t'offrent une base solide qui te garde rassasié plus longtemps.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 16,
+        "author": "Alice",
+        "content": "Peut-être que c'est une question de préférences. J'aime me sentir légère après avoir mangé, et les fruits me donnent cette sensation.",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 17,
+        "author": "Bob",
+        "content": "Et moi, j'aime sentir que j'ai fait le plein d'énergie pour la journée avec un repas riche en légumes. Peut-être que nous devrions juste être d'accord sur le fait que chacun a ses goûts !",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 18,
+        "author": "Charlie",
+        "content": "Alors, que diriez-vous d'un chocolat chaud pour clôturer ce débat ?",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 19,
+        "author": "Alice",
+        "content": "Haha, peut-être que tu as raison, Charlie. Un bon chocolat chaud pourrait mettre tout le monde d'accord !",
+        "date": "2023-10-02"
+    },
+    {
+        "id": 20,
+        "author": "Bob",
+        "content": "D'accord, un chocolat chaud pour finir en beauté. Mais je reste sur ma position : les légumes sont essentiels !",
+        "date": "2023-10-02"
+    }
+]

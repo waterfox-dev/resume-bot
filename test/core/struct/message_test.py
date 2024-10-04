@@ -1,4 +1,5 @@
 from unittest import TestCase 
+from unittest import main
 
 from core.struct.message import Message
 
@@ -25,3 +26,6 @@ class MessageTest(TestCase) :
             "author": "",
             "date": ""
         })
+        
+if __name__ == "__main__":
+    main()

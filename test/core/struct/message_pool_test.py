@@ -1,4 +1,5 @@
 from unittest import TestCase 
+from unittest import main
 
 from core.struct.message_pool import MessagePool
 from core.struct.message import Message
@@ -67,3 +68,6 @@ class TestMessagePool(TestCase) :
         self.assertEqual(pool[0].id, 0)
         self.assertEqual(pool[1].id, 1)
         self.assertEqual(pool[2].id, 3)
+        
+if __name__ == "__main__":
+    main()

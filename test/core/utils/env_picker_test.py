@@ -1,4 +1,5 @@
 from unittest import TestCase
+from unittest import main
 
 from core.utils.env_picker import pick_env_variable
 from core.utils.env_picker import load_env_file_in_memory
@@ -32,3 +33,6 @@ class TestEnvPicker(TestCase):
         import os
         os.remove(".test_env")
         return super().tearDown()
+    
+if __name__ == "__main__":
+    main()

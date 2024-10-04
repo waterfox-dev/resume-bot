@@ -8,7 +8,7 @@ class Message:
     id: int -- the message's unique id
     content: str -- the content of the message
     author: str -- the author of the message
-    send_time: str -- the time the message was sent
+    date: str -- the date the message was sent
     """
     id: int
     content: str

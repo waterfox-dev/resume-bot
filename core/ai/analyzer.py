@@ -7,7 +7,7 @@ class Analyzer:
         self.message_pool = message_pool
         openai.api_key = api_key
 
-    def analyze(self):
+    def analyze(self) -> str:
         prompt = (
             f"Résumez les messages suivants. Veuillez faire attention à qui parle. Résumez le point de vue de chaque personne :\n\n"
             + "\n\n".join(
@@ -19,7 +19,7 @@ class Analyzer:
         )
         
         response = openai.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": prompt}
             ],

@@ -14,7 +14,7 @@ class TestMessagePool(TestCase) :
         
         with self.assertRaises(Exception) as context :
             for i in range(4) :
-                pool.add(Message(id=i, content="content", author="author", send_time="send_time"))
+                pool.add(Message(id=i, content="content", author="author", date="date"))
         
         self.assertTrue("Stop strategy is enabled. Pool size exceded." in str(context.exception))
         
@@ -24,7 +24,7 @@ class TestMessagePool(TestCase) :
         pool.STRATEGY = PoolStrategy.POPFIRST
         
         for i in range(4) :
-            pool.add(Message(id=i, content="content", author="author", send_time="send_time"))
+            pool.add(Message(id=i, content="content", author="author", date="date"))
         
         self.assertEqual(len(pool), 3)
         self.assertEqual(pool[0].id, 1)
@@ -37,7 +37,7 @@ class TestMessagePool(TestCase) :
         pool.STRATEGY = PoolStrategy.POPRANDOM
         
         for i in range(4) :
-            pool.add(Message(id=i, content="content", author="author", send_time="send_time"))
+            pool.add(Message(id=i, content="content", author="author", date="date"))
         
         self.assertEqual(len(pool), 3)
         
@@ -47,7 +47,7 @@ class TestMessagePool(TestCase) :
         pool.STRATEGY = PoolStrategy.POPSMALLET
         
         for i in range(4) :
-            pool.add(Message(id=i, content=("content"*i), author="author", send_time="send_time"))
+            pool.add(Message(id=i, content=("content"*i), author="author", date="date"))
         
         self.assertEqual(len(pool), 3)
         self.assertEqual(pool[0].id, 1)
@@ -61,7 +61,7 @@ class TestMessagePool(TestCase) :
         pool.STRATEGY = PoolStrategy.POPBIGGEST
         
         for i in range(4) :
-            pool.add(Message(id=i, content=("content"*i), author="author", send_time="send_time"))
+            pool.add(Message(id=i, content=("content"*i), author="author", date="date"))
         
         self.assertEqual(len(pool), 3)
         self.assertEqual(pool[0].id, 0)

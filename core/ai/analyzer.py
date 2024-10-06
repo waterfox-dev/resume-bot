@@ -9,13 +9,10 @@ class Analyzer:
 
     def analyze(self) -> str:
         prompt = (
-            f"Résumez les messages suivants. Veuillez faire attention à qui parle. Résumez le point de vue de chaque personne :\n\n"
+            f"""Résumé des messages suivants. Identifiez qui parle et ne gardez que les points de vue pertinents :\n\n"""
             + "\n\n".join(
-            [
-                f"{message.author} - {message.content}"
-                for message in self.message_pool
-            ]
-            ) + "\n\n Vous pouvez utiliser le markdown pour formater le texte."
+            [f"{message.author}: {message.content}" for message in self.message_pool]
+            ) + "\n\nUtilisez markdown. Soyez direct et concis, sans détails superflus ni espaces inutiles. Allez à l'essentiel uniquement."""
         )
         
         response = openai.chat.completions.create(

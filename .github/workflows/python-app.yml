@@ -25,6 +25,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Create test database
+      run: |
+        touch data/mock.sqlite3
+    - name: Create table in test database
+      run: |
+        sqlite3 data/mock.sqlite3 < core/database/schema/schema.sql
     - name: Test with pytest
       run: |
         python -m unittest discover test "*_test.py" .

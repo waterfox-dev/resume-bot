@@ -17,7 +17,7 @@ BOT_INTENTS = Intents.default()
 BOT_CLIENT = Client(intents=BOT_INTENTS)
 BOT_TREE = CommandTree(BOT_CLIENT) 
 
-TEST_GUILD_ID = 1043261099555962970
+TEST_GUILD_ID = 1243591047527927828
 
 @BOT_TREE.command(name="ping", description="Ping Resume Bot, responds with 'Pong!'", guild=Object(id=TEST_GUILD_ID))
 async def ping_command(interaction: Interaction):

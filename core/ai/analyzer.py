@@ -12,7 +12,9 @@ class Analyzer:
             f"""Résumé des messages suivants. Identifiez qui parle et ne gardez que les points de vue pertinents :\n\n"""
             + "\n\n".join(
             [f"{message.author}: {message.content}" for message in self.message_pool]
-            ) + "\n\nUtilisez markdown. Soyez direct et concis, sans détails superflus ni espaces inutiles. Allez à l'essentiel uniquement."""
+            ) + """\n\nUtilisez markdown. Soyez direct et concis, sans détails superflus ni espaces inutiles. 
+            Allez à l'essentiel uniquement. 
+            La structure de ton document est 'point de vue {{user 1}}\n point de vue de {{user2}}\n...\n point de vue de {{userN}}' \n Résumé:"""
         )
         
         response = openai.chat.completions.create(

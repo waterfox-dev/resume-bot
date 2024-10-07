@@ -1,4 +1,5 @@
 import sqlite3 as sql 
+import json
 
 from core.struct.answer import Answer
 
@@ -11,12 +12,12 @@ class AnswerRecorder:
         self.conn = sql.connect(self.db_path)
         
     def record(self, answer: Answer) -> int :
-        
         cursor = self.conn.cursor()
-        cursor.execute(f"""INSERT INTO `RB_ANSWER` 
-                        (ANSWER_ID, ANSWER_JSON_MESSAGES, ANSWER_REPONSE, ANSWER_CALLER_ID) 
-                        VALUES ({answer['id']}, {answer['json_messages']}, {answer['response']}, {answer['caller_id']})""")
-        self.conn.commit() 
+        cursor.execute("""INSERT INTO `RB_ANSWER` 
+                (ANSWER_ID, ANSWER_JSON_MESSAGES, ANSWER_REPONSE, ANSWER_CALLER_ID) 
+                VALUES (?, ?, ?, ?)""", 
+                (answer['id'], json.dumps(answer['json_messages']), answer['response'], answer['caller_id']))
+        self.conn.commit()
         return answer['id']
     
     def add_thumbsup(self, answer_id: int) -> None :

@@ -6,6 +6,6 @@ class Answer(TypedDict) :
     
     id: int
     json_messages: MessagePool
-    reponse: str
+    response: str
     date: str 
     caller_id: int
